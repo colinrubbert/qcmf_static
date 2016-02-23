@@ -10,6 +10,8 @@ Soft Red:         #EE5D5D;
 body {
   font-style: 'Open Sans', Helvetica, sans-serif;
   margin-top: 100px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
 }
 
 
@@ -80,7 +82,8 @@ body {
 }
 
 #hero {
-  background: url('../img/industrial-sink.jpg') 50% 0 repeat fixed;
+  background: url('../img/industrial-sink.jpg') 50% 10% repeat fixed;
+  background-size: 100%;
   min-height: 500px;
   padding: 40px 0;
   color: white;
