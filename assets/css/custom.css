@@ -111,11 +111,12 @@ body {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .title-wrapper {
   font-weight: bold;
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -148,7 +149,6 @@ body {
   font-size: 48px;
   font-weight: bold;
   line-height: 48px;
-  padding-right: 30px;
 }
 
 .cta-number {
