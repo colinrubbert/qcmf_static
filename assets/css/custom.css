@@ -9,92 +9,172 @@ Soft Red:         #EE5D5D;
 /* ----- Elements ----- */
 body {
   font-style: 'Open Sans', Helvetica, sans-serif;
-  margin-top: 100px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
 }
 
 
 /* ----- Layouts ----- */
 
-.navbar {
-  min-height: 100px;
+.btn, .btn-lg {
+  border-radius: 0;
+  font-size: 30px;
+  line-height: 30px;
 }
 
-.navbar-default {
-  background: #FFF;
-  border: none;
+.btn-primary {
+  background-color: rgba(68, 108, 178, 0.9);
 }
 
-.navbar-brand {
-  padding: 0 20px;
+.btn-danger {
+  background-color: rgba(238, 93, 93, 0.9);
 }
 
-.navbar-brand img {
-  margin-top: 20px;
+/* ----- Navigation -----*/
+.main-nav {
+  height: 100px;
 }
 
-.navbar-title {
+.nav-container {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: auto auto;
+}
+
+.brand-wrapper {
+  display: inline-block;
+}
+
+.brand-wrapper .logo {
+  margin: 20px 10px 20px 0;
+  float: left;
+}
+
+.brand-wrapper .brand {
   color: #2C3E50;
-  margin: 20px 0 0 100px;
-  padding: 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 30px;
+  margin: 20px 20px 20px 10px;
+  float: right;
 }
 
-.navbar-default .navbar-nav>li>a {
+.brand.mobile {
+  display: none;
+}
+
+.active {
+  color: #2C3E50;
+}
+
+.links {
   color: #446CB3;
   font-size: 30px;
   line-height: 30px;
-  padding: 0 20px 0 0;
-  margin-top: 35px;
+  margin: 35px 0 20px 0;
+  float: right;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-  color: #2C3E50;
-  background-color: #FFF;
+.links>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-default .navbar-toggle {
-  border-color: #FFF;
+.links>ul>li {
+  display: inline;
+  padding-right: 20px;
 }
 
-.navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background-color: #446CB3;
+.links>ul>li:nth-child(4) {
+  padding-right: 0;
 }
 
-.navbar-toggle {
-  margin-top: 20px;
+.links>ul>li>a {
+  text-decoration: none;
+  margin: 0;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #FFF;
+.links>ul>li>a:hover {
+  color: #EE5D5D;
 }
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: transparent;
+.links.mobile {
+  display: none;
 }
 
+/* ----- Hero -----*/
 #hero {
-  background: url('../img/industrial-sink.jpg') 50% 10% repeat fixed;
-  background-size: 100%;
+  background: url('../img/industrial-sink.jpg') 50% 25% no-repeat;
+  background-size: cover;
+  color: #FFF;
   min-height: 500px;
-  padding: 40px 0;
-  color: white;
+  width: 100%;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
 
+.title-wrapper {
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 48px;
+  padding-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* ----- Call to Action ----- */
+#call-to-action {
+  background-color: #446CB3;;
+  color: #FFF;
+  min-height: 100px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+.cta {
+  margin-top: 30px;
+}
+
+.cta-text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  padding-right: 30px;
+}
+
+.cta-number {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+}
+
+
 /* ----- MEDIA QUERIES ----- */
 
-@media screen and ( max-width : 770px ) {
-  .navbar-title {
+@media screen and (max-width: 960px) {
+  .brand-wrapper .desktop {
     display: none;
+  }
+  .brand-wrapper .mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .links.desktop {
+    display: none;
+  }
+  .links.mobile {
+    display: block;
+    font-size: 10px;
   }
 }
