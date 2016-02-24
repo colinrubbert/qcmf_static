@@ -157,6 +157,10 @@ body {
   line-height: 48px;
 }
 
+.cta-number a {
+  color: #FFF;
+}
+
 
 /* ----- MEDIA QUERIES ----- */
 
