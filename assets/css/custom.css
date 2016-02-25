@@ -63,8 +63,8 @@ body {
   float: right;
 }
 
-.brand.mobile-nav {
-  /*display: none;*/
+.brand.mobile {
+  display: none;
 }
 
 .active {
