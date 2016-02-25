@@ -63,8 +63,8 @@ body {
   float: right;
 }
 
-.brand.mobile {
-  display: none;
+.brand.mobile-nav {
+  /*display: none;*/
 }
 
 .active {
@@ -103,8 +103,82 @@ body {
   color: #EE5D5D;
 }
 
-.links.mobile {
+.mobile-nav {
+  position: absolute;
+  width: 100%;
+  background: #446CB3;
+  padding: 100px 0 20px;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.mobile-nav>ul {
+  list-style-type: none;
+}
+
+.mobile-nav a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.mobile-nav-toggle {
   display: none;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin: 25px 20px 0 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobile-nav-toggle:selection {
+  background: transparent;
+}
+
+.mobile-nav-toggle:-moz-selection {
+  background: transparent;
+}
+
+.mobile-nav-toggle span,
+.mobile-nav-toggle span:before,
+.mobile-nav-toggle span:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #446CB3;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav-toggle span:before {
+  top: 15px;
+}
+
+.mobile-nav-toggle span:after {
+  top: -17px;
+}
+
+.mobile-nav-toggle.is-open span {
+  background: transparent;
+}
+
+.mobile-nav-toggle.is-open span:before,
+.mobile-nav-toggle.is-open span:after {
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: 0;
+  background-color: #EE5D5D;
+  z-index: 3;
+}
+
+.mobile-nav-toggle.is-open span:before {
+  transform: rotate(-45deg);
 }
 
 /* ----- Hero -----*/
@@ -319,14 +393,28 @@ textarea,
 }
 
 @media screen and (max-width: 760px) {
+  .nav-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mobile-nav-toggle {
+    display: flex;
+  }
   .links.desktop {
     display: none;
   }
-  .links.mobile {
+  .mobile-nav.is-open {
+    display: block;
+    transform: translateY(0%);
+  }
+  /*.links.mobile-nav {
     display: block;
     font-size: 10px;
-  }
+  }*/
   .equip-card {
     width: 100%;
   }
 }
+
+/*@media screen and (max-width: 760px) {
+}*/
