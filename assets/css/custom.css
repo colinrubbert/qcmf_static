@@ -9,6 +9,7 @@ Soft Red:         #EE5D5D;
 /* ----- Elements ----- */
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #2C3E50;
 }
 
 
@@ -248,6 +249,32 @@ body {
   line-height: 48px;
   font-weight: 300;
   text-decoration: underline;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact .form-wrapper {
+  background-color: #F4F4F1;
+  padding: 60px 20px;
+  box-shadow: 0px 0px 10px #BCBECE;
+}
+
+/* ----- FORMS -----*/
+
+input {
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-style: none;
+}
+
+textarea,
+.input-lg {
+  border-style: none;
 }
 
 /* ----- MEDIA QUERIES ----- */
