@@ -30,9 +30,14 @@ body {
 }
 
 /* ----- Navigation -----*/
-.main-nav {
+.main-nav, .main-nav-alt {
   height: 100px;
 }
+
+.main-nav-alt {
+  background-color: #F4F4F1;
+}
+
 
 .nav-container {
   padding-left: 80px;
@@ -134,7 +139,7 @@ body {
 
 /* ----- Call to Action ----- */
 #call-to-action {
-  background-color: #446CB3;;
+  background-color: #446CB3;
   color: #FFF;
   min-height: 100px;
   text-align: center;
@@ -259,6 +264,31 @@ body {
   background-color: #F4F4F1;
   padding: 60px 20px;
   box-shadow: 0px 0px 10px #BCBECE;
+}
+
+/* ----- FOOTER ----- */
+
+#site-footer {
+  background-color: #F4F4F1;
+}
+
+.copyright-section {
+  padding: 10px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.copyright-section p {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.copyright-section span {
+  font-weight: 300;
+}
+
+.copyright-section a {
+  color: #EE5D5D;
 }
 
 /* ----- FORMS -----*/
