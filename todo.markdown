@@ -1,6 +1,5 @@
 ** Things to do **
 
-- Figure out why font-weight light isn't properly displaying
 - Form group in Contact section
 - Footer
 - Jobs page
