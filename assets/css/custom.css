@@ -248,19 +248,23 @@ body {
 
 /* ----- ABOUT SECTION ----- */
 
-#about {
+#about,
+#equipment,
+#jobs, #contact {
   margin: 0;
   padding: 50px 0 100px 0;
 }
 
-#about h1 {
+#about h1,
+#equipment h1,
+#jobs h1,
+#contact h1 {
   margin: 0;
   padding-bottom: 50px;
   text-align: center;
   font-size: 48px;
   line-height: 48px;
   font-weight: 300;
-  text-decoration: underline;
 }
 
 #about p.lead {
@@ -273,22 +277,10 @@ body {
   box-shadow: 0px 0px 10px #BCBECE;
 }
 
-/* ----- ABOUT SECTION ----- */
+/* ----- EQUIPMENT SECTION ----- */
 
 #equipment {
   background-color: #F4F4F1;
-  margin: 0;
-  padding: 50px 0 100px 0;
-}
-
-#equipment h1 {
-  margin: 0;
-  padding-bottom: 50px;
-  text-align: center;
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 300;
-  text-decoration: underline;
 }
 
 .card-wrapper {
@@ -320,20 +312,6 @@ body {
 }
 
 /* ----- CONTACT ----- */
-#contact {
-  margin: 0;
-  padding: 50px 0 100px 0;
-}
-
-#contact h1 {
-  margin: 0;
-  padding-bottom: 50px;
-  text-align: center;
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 300;
-  text-decoration: underline;
-}
 
 #contact h2 {
   text-align: center;
