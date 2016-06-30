@@ -50,8 +50,13 @@ body {
 }
 
 .brand-wrapper .logo {
-  margin: 20px 10px 20px 0;
+  margin: 10px 10px 10px 0;
   float: left;
+}
+
+.brand-wrapper .logo img {
+  height: 80px;
+  width: auto;
 }
 
 .brand-wrapper .brand {
